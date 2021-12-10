@@ -27,9 +27,9 @@
 	 *** It will only be invoked if you run "mvn package" in the top-level directory.
 	 -->
 	<plugin>
-	<groupId>org.fortasoft</groupId>
-	<artifactId>gradle-maven-plugin</artifactId>
-	<version>1.0.5</version>
+		<groupId>org.fortasoft</groupId>
+		<artifactId>gradle-maven-plugin</artifactId>
+		<version>1.0.5</version>
 		<configuration>
 			<!-- Keep this in sync with the Android Build version of gradle. -->
 			<gradleVersion>1.9</gradleVersion>
