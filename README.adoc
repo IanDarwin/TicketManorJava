@@ -24,12 +24,10 @@ other commercial ticket selling organization.
 This project now depends on Java SE 12+ and Java EE 8+.
 
 The Java projects generally use Eclipse to write/compile/test code and Maven to build/package.
-The Android project uses Android Studio (based on IntelliJ IDea) to write code
-and Gradle to compile/test/package.
 
-The top-level Maven pom runs each of the other projects (including android, through
-a Maven plug-in that knows how to run Gradle). For some reason the top-level build
-doesn't always succeed, so you might want to build just the EE project, as below.
+The top-level Maven pom runs each of the other projects.  For some
+reason the top-level build doesn't always succeed, so you might want
+to build just the EE project, as below.
 
 
 .*Build*
