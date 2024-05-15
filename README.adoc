@@ -1,16 +1,15 @@
 = TicketManor
 
-*Defunct* - this repo moved to https://github.com/IanDarwin/TicketManorJava after Learning Tree
-deleted Course 936 from the course catalog. All enhancements, fixes, will be done on that repo
-instead of here.
+[This repo takes over the mantle of TicketManor from the previous LearningTree site,
+since Learning Tree discontinued their Course 936, Enterprise Java, for which this
+website was the sample application foundation. 
+It was used as a showcase in the course offered by http://learningtree.com/[Learning Tree],
+the world leader in instructor-led tecnical training. Learning Tree still offers some courses in Java
+as well as many other enterprise applications.]
 
 This is a demo application of building enterprise applications using Java EE. There are 
 a variety of APIs used, e.g., Java EE (JPA, EJB), Spring Framework, modern SPA Web (Angular, Ember.JS),
 and so on. Each major framework has its own subdirectory.
-
-It will be used as a showcase in various courses offered by http://learningtree.com/[Learning Tree],
-the world leader in instructor-led tecnical training. Learning Tree offers courses in Java
-as well as many other enterprise applications.
 
 Legal Note: We do _not_ intend this to be a passing-off of TicketMaster.com, which is a trademark in
 most countries. It is just a demonstration of how certain parts of an enterprise app could
@@ -24,24 +23,21 @@ other commercial ticket selling organization.
 This project now depends on Java SE 12+ and Java EE 8+.
 
 The Java projects generally use Eclipse to write/compile/test code and Maven to build/package.
-The Android project uses Android Studio (based on IntelliJ IDea) to write code
-and Gradle to compile/test/package.
 
-The top-level Maven pom runs each of the other projects (including android, through
-a Maven plug-in that knows how to run Gradle). For some reason the top-level build
-doesn't always succeed, so you might want to build just the EE project, as below.
+The top-level Maven pom runs each of the other projects.  For some
+reason the top-level build doesn't always succeed, so you might want
+to build just the EE project, as below.
 
 
 .*Build*
-image:http://img.shields.io/badge/license-BSD2-green.svg[link="https://github.com/LearningTree/TicketManorJava/blob/master/LICENSE"]
-image:https://img.shields.io/badge/maven-Standard Builds-pink.svg[link="https://github.com/LearningTree/TicketManorJava/blob/master/pom.xml"]
+image:http://img.shields.io/badge/license-BSD2-green.svg[link="https://github.com/IanDarwin/TicketManorJava/blob/master/LICENSE"]
+image:https://img.shields.io/badge/maven-Standard Builds-pink.svg[link="https://github.com/IanDarwin/TicketManorJava/blob/master/pom.xml"]
 
 == Deployment
 
 The server projects are configured to deploy with the EE Server WildFly 14+
 
-You MUST change the file ${WILDFLYHOME}/standalone/configuration/standalone.xml AND standalone-full.xml to have
-a datasource named TicketManorDataSource.  For initial testing I just added:
+You MUST change the file ${WILDFLYHOME}/standalone/configuration/standalone.xml AND standalone-full.xml to have a datasource named TicketManorDataSource.  For initial testing I just added:
 
 	<datasource jndi-name="java:jboss/datasources/TicketManorDataSource" pool-name="TicketManorPool" 
 		enabled="true" use-java-context="true">
@@ -53,7 +49,7 @@ a datasource named TicketManorDataSource.  For initial testing I just added:
 		</security>
 	</datasource>
 
-We should someday change this to a real database like PostgreSQL before deployment.
+You should change this to a real database like PostgreSQL before deployment.
 
 	cd ticketmanor-ee
 	mvn wildfly:deploy # Assuming you have WildFly running
