@@ -1,5 +1,9 @@
 = TicketManor
 
+*Defunct* - this repo moved to https://github.com/IanDarwin/TicketManorJava after Learning Tree
+deleted Course 936 from the course catalog. All enhancements, fixes, will be done on that repo
+instead of here.
+
 This is a demo application of building enterprise applications using Java EE. There are 
 a variety of APIs used, e.g., Java EE (JPA, EJB), Spring Framework, modern SPA Web (Angular, Ember.JS),
 and so on. Each major framework has its own subdirectory.
