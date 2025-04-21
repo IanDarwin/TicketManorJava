@@ -3,9 +3,9 @@ package com.ticketmanor.ui.jsf;
 import java.util.Collections;
 import java.util.List;
 
-import javax.ejb.EJB;
-import javax.enterprise.context.RequestScoped;
-import javax.inject.Named;
+import jakarta.ejb.EJB;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Named;
 
 import com.ticketmanor.model.Event;
 import com.ticketmanor.service.EventsEjb;

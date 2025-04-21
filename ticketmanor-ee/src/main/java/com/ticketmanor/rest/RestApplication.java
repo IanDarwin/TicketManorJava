@@ -1,7 +1,7 @@
 package com.ticketmanor.rest;
 
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
 
 /** This class is needed to enable REST and to specify the base path for REST services */
 @ApplicationPath("/rest")

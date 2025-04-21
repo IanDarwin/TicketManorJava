@@ -5,18 +5,18 @@ import java.time.LocalDateTime;
 import java.util.Vector;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.ejb.Local;
-import javax.ejb.Remote;
-import javax.ejb.Schedule;
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.TypedQuery;
+import jakarta.annotation.PostConstruct;
+import jakarta.ejb.Local;
+import jakarta.ejb.Remote;
+import jakarta.ejb.Schedule;
+import jakarta.ejb.Singleton;
+import jakarta.ejb.Startup;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.TypedQuery;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
 
 import com.ticketmanor.model.Act;
 import com.ticketmanor.model.ActType;

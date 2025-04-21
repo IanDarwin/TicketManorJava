@@ -23,7 +23,7 @@ public class MyLocalDateTimeDeserializer extends JsonDeserializer<LocalDateTime>
 				MyLocalDateTimeSerializer.DATE_FORMATTER.parse(dateTimeAsString));
 		}
 		else {
-			throw ctx.mappingException("Could not deserialize this mess: " + currentToken);
+			throw new IllegalStateException("Could not deserialize this mess: " + currentToken);
 		}
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.ejb.Stateful;
+import jakarta.ejb.Stateful;
 
 import com.ticketmanor.model.OrderItem;
 import com.ticketmanor.model.Sellable;
