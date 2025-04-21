@@ -23,7 +23,7 @@
 
 				<p:panel>
 					<f:facet name="header">Movie News</f:facet>
-					<p:feedReader value="http://www.fandango.com/rss/top10boxoffice.rss" var="news" size="5">
+					<p:feedReader value="https://moviefone.com/feeds/movie-news.rss" var="news" size="5">
 						<h:outputText value="#{news.title}" style="font-weight: bold;display:block"/>
 						<h:outputText value="#{news.description.value}" escape="false"/>
 						<p:separator />
@@ -31,7 +31,7 @@
 							Unable to access news feed at this time.
 						</f:facet>
 					</p:feedReader>
-					<f:facet name="footer">News Feed Courtesy of <a href="http://fandango.com">fandango.com</a></f:facet>
+					<f:facet name="footer">News Feed Courtesy of <a href="http://moviephone.com">fandango.com</a></f:facet>
 				</p:panel>
 				
 
