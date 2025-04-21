@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
-	<context-root>/ticketmanor</context-root>
 	<!--
+	<context-root>/ticketmanor</context-root>
+	-->
 	<virtual-host>ticketmanor.com</virtual-host>
 	<context-root>/</context-root>
-	-->
 
 	<!-- Map the JBoss-specific JNDI name to the generic JDBC/JNDI name -->
 	<resource-ref>

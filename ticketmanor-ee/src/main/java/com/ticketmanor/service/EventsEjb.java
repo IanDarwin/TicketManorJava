@@ -75,11 +75,11 @@ public class EventsEjb {
     public List<Event> fakeEvents(ActType type) {
 		System.out.println("EventsEjb::fakeEvents called");
 		Act firstAct = em.find(Act.class, 1L); // must exist
-		List<Act> actors = em.createQuery("from Act act where act.type = ?1", Act.class).
+		List<Act> actors = em.createQuery("select act from Act act where act.type = ?1", Act.class).
 				setParameter(1, type).
 				getResultList();
 		
-		List<Venue> allVenues = em.createQuery("from Venue v", Venue.class).getResultList();
+		List<Venue> allVenues = em.createQuery("select v from Venue v", Venue.class).getResultList();
 		List<Event> newAll = new Vector<>();
 		LocalDateTime start = LocalDateTime.now().withHour(19).withMinute(0);
 		int nTeams = 0, nVenues=0;
