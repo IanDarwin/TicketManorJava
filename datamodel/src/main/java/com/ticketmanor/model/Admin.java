@@ -1,6 +1,6 @@
 package com.ticketmanor.model;
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 
 /*
  * Admin - A Person who has administrative privileges
