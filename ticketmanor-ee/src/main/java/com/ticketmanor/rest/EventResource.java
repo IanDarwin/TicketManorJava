@@ -25,7 +25,7 @@ public class EventResource {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Event> getConcerts() {
-		return emf.createEntityManager().createQuery("FROM Event", Event.class).getResultList();
+		return emf.createEntityManager().createQuery("Select e from Event e", Event.class).getResultList();
 	}
 	
 	@GET
