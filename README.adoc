@@ -1,13 +1,16 @@
 = TicketManor
 
-[This repo takes over the mantle of TicketManor from the previous LearningTree site,
+*Discontinued*: This repo got too big, and it ran in a web/app server into the age
+of microservices, so I've split it into `ticketmanor-datamodel` and `ticketmanor-quarkus`.
+
+This repo took over the mantle of TicketManor from the previous LearningTree site,
 since Learning Tree discontinued their Course 936, Enterprise Java, for which this
 website was the sample application foundation. 
 It was used as a showcase in the course offered by http://learningtree.com/[Learning Tree],
 the world leader in instructor-led tecnical training. Learning Tree still offers some courses in Java
-as well as many other enterprise applications.]
+as well as many other enterprise applications.
 
-This is a demo application of building enterprise applications using Java EE. There are 
+This was a demo application of building enterprise applications using Java EE. There are 
 a variety of APIs used, e.g., Java EE (JPA, EJB), Spring Framework, modern SPA Web (Angular, Ember.JS),
 and so on. Each major framework has its own subdirectory.
 
@@ -20,9 +23,9 @@ other commercial ticket selling organization.
 
 == Building
 
-This project now depends on Java SE 12+ and Java EE 8+.
+This project now depends on Java SE 17+ and Java EE 8+.
 
-The Java projects generally use Eclipse to write/compile/test code and Maven to build/package.
+The Java projects use Apache Maven to build/package.
 
 The top-level Maven pom runs each of the other projects.  For some
 reason the top-level build doesn't always succeed, so you might want

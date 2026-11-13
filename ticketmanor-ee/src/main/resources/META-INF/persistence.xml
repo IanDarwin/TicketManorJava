@@ -35,15 +35,15 @@
 		 *** after making sure that the given provider is first on your classpath.
 		 -->
 		<!--
-		<property name="javax.persistence.provider" value="org.eclipse.persistence.jpa.PersistenceProvider"/>
+		<property name="jakarta.persistence.provider" value="org.eclipse.persistence.jpa.PersistenceProvider"/>
 		-->
-		<property name="javax.persistence.provider" value="org.hibernate.ejb.HibernatePersistence"/>
+		<property name="jakarta.persistence.provider" value="org.hibernate.ejb.HibernatePersistence"/>
 
 		<!-- Here in TicketManor-EE we create the database -->
-		<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+		<property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
 
 		<!-- And populate it -->
-		<property name="javax.persistence.sql-load-script-source" value="sql/populate.sql"/>
+		<property name="jakarta.persistence.sql-load-script-source" value="sql/populate.sql"/>
 
 		<!-- Properties for eclipselink -->
 		<property name="eclipselink.target-database"
